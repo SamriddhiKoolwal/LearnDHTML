@@ -24,3 +24,13 @@ console.log(multiply(5, 2));
 
 
 console.log(multiply(5));
+
+const c=Math.pow(45,10);
+document.getElementById('po').innerHTML=c;
+document.getElementById('sq').innerHTML=Math.sqrt(64);
+document.getElementById('ab').innerHTML=Math.abs(-4.7);
+document.getElementById('ce').innerHTML=Math.ceil(5.5);
+document.getElementById('fl').innerHTML=Math.floor(4.7);
+document.getElementById("ra").innerHTML = Math.random();
+
+document.getElementById("cos").innerHTML = Math.cos(0 * Math.PI / 180);
