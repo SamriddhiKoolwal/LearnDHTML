@@ -13,3 +13,11 @@ document.getElementById('name').innerHTML=arr[3].toString();
 var x=85+80+89+89;
 document.getElementById('marks').innerHTML=x;
 document.getElementById('marks2').innerHTML=x/4;
+function multiply(a, b = 1) {
+  return a * b;
+}
+
+console.log(multiply(5, 2));
+
+
+console.log(multiply(5));
