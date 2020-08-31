@@ -34,3 +34,29 @@ document.getElementById('fl').innerHTML=Math.floor(4.7);
 document.getElementById("ra").innerHTML = Math.random();
 
 document.getElementById("cos").innerHTML = Math.cos(0 * Math.PI / 180);
+function myFunction() {
+  var x, text;
+
+
+  x = document.getElementById("Phone").value;
+
+
+  if (isNaN(x) || x < 0) {
+    text = "Phone No is not valid";
+
+  document.getElementById("demo1").innerHTML = text;
+}
+var y;
+y=document.getElementById('fname').value;
+var letters = /^[A-Za-z]+$/;
+       if(y.match(letters))
+      {
+
+      return true;
+      }
+      else
+      {
+      alert('Please input alphabet characters only');
+      return false;
+      }
+}

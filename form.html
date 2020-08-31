@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+
+
+      table{
+        border-spacing: 15px 30px;
+      }
+      input[type=text]{
+         border-radius: 4px;
+  }
+  td{
+    font-weight: bold;
+  }
+
+    </style>
+  </head>
+  <body>
+
+    <form method="post">
+      <table>
+        <tr>
+          <th>First Name:</th>
+          <td>  <input type="text" id="fname" name="fname" required></td>
+        </tr>
+        <tr>
+
+        <tr>
+          <th>Phone NO:</th>
+          <td><input type="text" id="Phone" name="Phone" required></td>
+        </tr>
+
+
+        <tr>
+          <th>Subject Intrests</th>
+          <td><input type="checkbox" id="HTML" name="reason" value="HTML">
+          <label for="HTML">HTML</label>
+          <input type="checkbox" id="CSS" name="reason" value="CSS">
+          <label for="CSS">CSS</label>
+          <input type="checkbox" id="JavaScript" name="reason" value="JavaScript">
+          <label for="JavaScript">JavaScript</label></td>
+        </tr>
+
+      <th><button type="button" onclick="myFunction()">Submit</button></th>
+      <th><input type="reset" id="button" value="Reset"></th>
+    </tr>
+
+</form>
+<p id="demo1"></p>
+<script src="script.js"></script>
+  </body>
+</html>
