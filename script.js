@@ -2,6 +2,9 @@ const myHeading = document.querySelector('h1');
 myHeading.textContent = 'Hello world!';
 document.querySelector('button').onclick=function(){
   prompt("what is ur name?");
+  var patt1 = /[a-h]/g;
+  var result = str.match(patt1);
+  document.getElementById("demo").innerHTML = result;
 }
 let variable1=5;
 let variable2="sam";
