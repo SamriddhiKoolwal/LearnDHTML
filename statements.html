@@ -5,27 +5,31 @@
     <title></title>
   </head>
   <body>
-    <input type="number" name="number" value="" id="number">
+    <input type="text" name="number" value="" id="number">
     <button type="submit" name="submit">Submit</button><br>
+    <p id="p01"></p>
     <script type="text/javascript">
       document.querySelector('button').onclick=function(){
-      const y=document.getElementById('number').value;
+        var message;
+        message = document.getElementById("p01");
+        message.innerHTML = "";
+      var y=document.getElementById('number').value;
+      try {
+        if(y == "")  throw "is empty";
+        if(isNaN(y)) throw "is not a number";
+        y=Number(y);
+      }
+      catch(err) {
+        message.innerHTML = "Input " + err;
+      }
       if(y>=10 && y<=100){
         alert("the number is between 10 and 100");
       }
       else{
         alert("the number is not in  between 10 and 100");
       }
-      const x=document.getElementById('number').value;
-      switch (true) {
-    case (x >=10 && x<=100):
-        console.log("the number is between 10 and 100");
-        break;
 
-    default:
-        console.log("none");
-        break;
-}
+
 }
 function fibonacci(num)
 {
