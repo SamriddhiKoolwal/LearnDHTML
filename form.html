@@ -45,12 +45,41 @@
           <label for="JavaScript">JavaScript</label></td>
         </tr>
 
-      <th><button type="button" onclick="myFunction()">Submit</button></th>
+      <th><button type="button" onclick=" return myFunction()">Submit</button></th>
       <th><input type="reset" id="button" value="Reset"></th>
     </tr>
 
 </form>
 <p id="demo1"></p>
-<script src="script.js"></script>
+<script>
+function myFunction() {
+  var x, text;
+
+x = document.getElementById("Phone").value;
+
+
+if (isNaN(x) || x < 0) {
+  text = "Phone No is not valid";
+
+document.getElementById("demo1").innerHTML = text;
+}
+var y;
+y=document.getElementById('fname').value;
+var letters = /^[A-Za-z]+$/;
+     if(y.match(letters))
+    {
+      alert('correct input');
+    return true;
+    }
+    else
+    {
+    alert('Please input alphabet characters only');
+    return false;
+    }
+
+var z=document.getElementById('fname').value;
+console.log(z);
+}
+</script>
   </body>
 </html>
