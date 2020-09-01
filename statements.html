@@ -8,6 +8,12 @@
     <input type="text" name="number" value="" id="number">
     <button type="submit" name="submit">Submit</button><br>
     <p id="p01"></p>
+    <h3>Strings</h3>
+    <h2>About HTML</h2>
+  <p> 5th , 7th and 10th term: </p>
+  <p id="para"></p>
+  <p id="para1"></p>
+  <p id="para2"></p>
     <script type="text/javascript">
       document.querySelector('button').onclick=function(){
         var message;
@@ -45,9 +51,13 @@ function fibonacci(num)
     }
     return num2;
 }
-
-
 document.write("Fibonacci(8): "+fibonacci(8)+"<br>");
+var s="HTML is the most basic building block of the Web. It defines the meaning and structure of web content."
+document.getElementById("para").innerHTML = s.slice(23,31) ;
+document.getElementById("para1").innerHTML = s.slice(38,41) ;
+document.getElementById("para2").innerHTML = s.slice(45,50) ;
+
+console.log(s);
     </script>
   </body>
 </html>
