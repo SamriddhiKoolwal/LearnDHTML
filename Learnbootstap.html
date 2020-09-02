@@ -14,24 +14,31 @@
 </head>
 <body>
 
-<button id="hider">Hide</button>
-<button id="shower">Show</button>
-<div>
-  <span>Once</span> <span>upon</span> <span>a</span>
-  <span>time</span> <span>there</span> <span>were</span>
-  <span>three</span> <span>programmers...</span>
-</div>
+<button id="hider">Click to Fade In</button>
+<button id="shower">click to fade out</button><br>
+<br>
+<div id="div1" style="width:80px;height:80px;background-color:red;"></div>
+<br>
+<div id="div2" style="width:80px;height:80px;background-color:green;"></div>
+<br>
+<div id="div3" style="width:80px;height:80px;background-color:blue;"></div><br>
+<br>
+<div id="div4" style="width:80px;height:80px;border:1px solid">Hello World</div>
+<button id="hs">Click for toggle effect</button>
 
 <script>
 $( "#hider" ).click(function() {
-  $( "span:last-child" ).hide( "fast", function() {
-  
-    $( this ).prev().hide( "fast", arguments.callee );
+  $('#div1').fadeIn("slow");
+    $('#div2').fadeIn(2000);
+      $('#div3').fadeIn();
   });
-});
+
 $( "#shower" ).click(function() {
-  $( "span" ).show( 2000 );
+$('#div1').fadeOut("slow");
 });
+$("#hs").dblclick(function(){
+  $("#div4").toggle();
+})
 </script>
 
 </body>
